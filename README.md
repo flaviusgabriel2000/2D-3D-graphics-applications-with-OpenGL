@@ -2,17 +2,12 @@
 
 ## :sparkles: Introduction
 
-This project is a tiny graphics framework used by the Computer Graphics Department of the Polytechnic University of Bucharest.
-It is currently used as teaching and study material for a number of courses of increasing complexity, including, but not limited to:
-
--   **`EGC`** Elements of Computer Graphics, BSc year 3 &mdash; [course materials (RO)](https://ocw.cs.pub.ro/courses/egc)
--   **`SPG`** Graphics Processing Systems, BSc year 4 &mdash; [course materials (RO)](https://ocw.cs.pub.ro/courses/spg)
+This project is a graphics framework. The implementation of the 2D/3D applications can be found in src/lab_m1/Tema*
 
 The functionality is split into several modules of increasing difficulty (`m1`, `m2`, etc.).
 
 You can read more about it [in the docs](docs/home.md).
 
-It has missing and closed-source functionality that you will need to implement.
 
 The code is cross-platform, and supports the following architectures:
 
@@ -28,7 +23,7 @@ This section describes ***what you need to do and install*** before actually bui
 
 ### Install a compiler
 
-The compiler requirements are listed below. We strongly recommend to always use the latest compiler versions.
+The compiler requirements are listed below. I strongly recommend to always use the latest compiler versions.
 
 -   Minimum:
     -   Windows: Visual Studio 2015 Update 3 with `Programming Languages -> Visual C++` checked when installing
@@ -129,43 +124,9 @@ You can run the project from an IDE, as well as standalone, from anywhere on dis
     -   or just open the `.sln` file in Visual Studio, then press `F5` to run it
 
 -   Linux and macOS:
-    -   `./bin/Debug/GFXFramework`
-
-To run a certain lab:
-
--   Go into `main.cpp`
--   Find this line:
-    ```cpp
-    World *world = new gfxc::SimpleScene();
-    ```
--   Replace it with whatever you want to run, for example:
-    ```cpp
-    World *world = new m1::Lab1();
-    World *world = new m2::Lab1();
-    World *world = new extra::TessellationShader();
-    // etc.
-    ```
+    -   `./bin/Debug/GFXFramework
 
 
 ## :book: Documentation
 
 All user and developer documentation can be found in the `docs` directory.
-
-
-## :wrench: Contributing
-
-See the [CONTRIBUTING.md](CONTRIBUTING.md) file for more info.
-A future roadmap is ***TBD***.
-
-
-## :page_facing_up: License
-
-This project is available under the [MIT][ref-mit] license; see [LICENSE.md](LICENSE.md) for the full license text.
-This project also includes external libraries that are available under a variety of licenses; see [LEGAL.txt](LEGAL.txt)
-for the full license texts and legal notices.
-
-
-[ref-cmake]:            https://github.com/Kitware/CMake/
-[ref-cmake-dl]:         https://github.com/Kitware/CMake/releases/
-[ref-cmake-build]:      https://github.com/Kitware/CMake#building-cmake-from-scratch
-[ref-mit]:              https://opensource.org/licenses/MIT
